@@ -1,0 +1,97 @@
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 221px;
+    h3 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 42px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 36px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        margin: 0px 237px;
+        li {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+            div {
+                margin-top: 78px;
+                display: flex;
+                flex-direction: row;
+                img {
+                    box-shadow: 1px 1px 1px 1px #000;
+                    padding: 30px 15px;
+                }
+                h6 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    padding-left: 17px;
+                    align-self: end;
+                    padding-bottom: 15px;
+                }
+            }
+            p {
+                font-size: 18px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        padding: 0px 30px;
+        margin-top: 115px;
+        h3 {
+            font-size: 36px;
+        }
+        p {
+            width: 100%;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        ul {
+            grid-template-columns: repeat(1, 4fr);
+            margin: 0px;
+            li {
+                margin: 0px 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 410px) {
+    div {
+        padding: 0px 10px;
+        h3 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+        }
+        ul {
+            li {
+                div {
+                    flex-direction: column;
+                    img {
+                        width: 50px;
+                    }
+                    h6 {
+                        align-self: flex-start;
+                        margin-top: 20px;
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
